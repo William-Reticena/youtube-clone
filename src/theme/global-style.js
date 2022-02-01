@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
   }
 
-  body {
+  #root {
     height: 100vh;
   }
 `;

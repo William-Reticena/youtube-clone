@@ -1,13 +1,36 @@
 import React from "react";
-import { Grid, Header, MainContent, NavBar } from '../../ui-components';
+import {
+  Grid,
+  Header,
+  MainContent,
+  NavBar,
+  Row
+} from '../../ui-components';
+import { VideoIcon } from '../../icons';
 
 const Main = () => (
-  <Grid col={2}>
-    <Header>cabeça</Header>
+  <Grid direction='column'>
+    <Row>
+      <Header>
+        <VideoIcon />
+        cabeça
+      </Header>
+    </Row>
 
-    <NavBar>barra lateral</NavBar>
+    <Row xs={{ height: '100%' }}>
+      <Grid>
+        <Row xs={{ width: '180px' }}>
+          <NavBar>barra lateral</NavBar>
+        </Row>
 
-    <MainContent>principal</MainContent>
+        <Row fullwidth>
+          <MainContent>
+            principal
+          </MainContent>
+        </Row>
+      </Grid>
+
+    </Row>
   </Grid>
 );
 

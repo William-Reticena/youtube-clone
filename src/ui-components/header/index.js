@@ -1,12 +1,8 @@
 import styled from "styled-components";
 
-export const Header = styled.header.attrs({
-  teste: `${props => props.teste}`
-})`
+export const Header = styled.header`
   background: #ccc;
-  grid-area: a;
-  // grid-column: 2/3;
-  // grid-row: 2/3;
+  // grid-area: header;
+  // grid-column: 1/3;
   height: ${({ theme }) => theme.baseMeasure * 7}px;
-  // width: ${props => props.teste};
 `;

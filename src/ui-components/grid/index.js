@@ -1,12 +1,7 @@
 import styled from "styled-components";
 
-// const options = {
-//   columns: 1
-// };
-
 const Grid = (props) => {
-  // options.columns = col;
-  console.log(props.col);
+  console.log(props);    
 
   return (
     <Wrapper {...props}>{props.children}</Wrapper>
@@ -14,11 +9,14 @@ const Grid = (props) => {
 };
 
 const Wrapper = styled.div`
-  display: grid;
-  // grid: 'a' 100px
-  //       'b' 400px
-  //       / 1fr 1fr;
-  grid: 1fr / 1fr ${({ col }) => col}fr;
+  display: flex;
+  flex-direction: ${({ direction }) => direction || 'row'};
+  height: 100%;
+  // width: 100vw;
+  // grid: 'header' min-content
+  //       'navBar' min-content
+  //       'mainContent' 1fr
+  //       / 1fr 4fr;
 `;
 
 export default Grid;
