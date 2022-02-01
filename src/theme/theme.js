@@ -1,3 +1,4 @@
 export const theme = {
-  color: 'white'
+  color: 'white',
+  baseMeasure: 8
 };
