@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
-    color: ${({ theme }) => theme.color}; 
+    color: ${({ theme }) => theme.color};
     margin: 0;
   }
 
