@@ -1,13 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Header } from './header';
+import { MainContent } from "./main-content";
+import { NavBar } from "./nav-bar";
 import {
   Avatar,
   Button,
   Grid,
-  Header,
   Input,
-  MainContent,
-  NavBar,
   Row,
   Typograph,
 } from '../../ui/components';
