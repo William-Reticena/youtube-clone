@@ -9,4 +9,5 @@ export const Avatar = (props) => (
 const AvatarWrapper = styled.img`
   border-radius: 50%;
   height: ${props => props.height || '50px'};
+  width: ${props => props.height};
 `;

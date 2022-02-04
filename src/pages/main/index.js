@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Header } from './header';
 import { MainContent } from "./main-content";
 import { NavBar } from "./nav-bar";
+import { VideoContainer } from "./video-container";
 import {
   Avatar,
   Button,
@@ -12,6 +13,8 @@ import {
   Typograph,
 } from '../../ui/components';
 import { VideoIcon } from '../../ui/icons';
+
+import lobo from '../../images/lobo-colorido.jpg'
 
 const Main = () => (
   <Grid direction='column'>
@@ -102,7 +105,9 @@ const Main = () => (
 
         <Row fullwidth>
           <MainContent>
-            principal
+            {[1,2,3,4,5,6,].map(item => (
+              <VideoContainer src={lobo} />
+            ))}
           </MainContent>
         </Row>
       </Grid>

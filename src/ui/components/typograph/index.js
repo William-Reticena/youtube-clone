@@ -20,9 +20,15 @@ const H2 = styled.h2`
   color: #00f;
 `;
 
+const H6 = styled.h6`
+// display: block;
+color: #0f0;
+`;
+
 const variants = {
   'h1': H1,
-  'h2': H2
+  'h2': H2,
+  'h6': H6,
 };
 
 Typograph.defaultProps = {
