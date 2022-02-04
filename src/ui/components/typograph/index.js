@@ -23,8 +23,8 @@ const H2 = styled.h2`
 const variants = {
   'h1': H1,
   'h2': H2
-}
+};
 
 Typograph.defaultProps = {
   variant: 'h1'
-}
+};

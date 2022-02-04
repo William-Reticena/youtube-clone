@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import img from '../../../images/lobão.jpg';
 
-export const Avatar = () => (
-  <AvatarContent src={img} alt='' />
+export const Avatar = (props) => (
+  <AvatarWrapper src={img} alt='' {...props} />
 );
 
-const AvatarContent = styled.img`
+
+const AvatarWrapper = styled.img`
   border-radius: 50%;
-  height: 50px;
+  height: ${props => props.height || '50px'};
 `;

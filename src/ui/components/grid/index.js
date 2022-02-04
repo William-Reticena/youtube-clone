@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Grid = (props) => {
-  console.log(props);    
+  // console.log(props);
 
   return (
     <Wrapper {...props}>{props.children}</Wrapper>
