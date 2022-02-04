@@ -6,9 +6,7 @@ import { NavBar } from "./nav-bar";
 import { VideoContainer } from "./video-container";
 import {
   Avatar,
-  Button,
   Grid,
-  Input,
   Row,
   Typograph,
 } from '../../ui/components';
@@ -19,21 +17,7 @@ import lobo from '../../images/lobo-colorido.jpg'
 const Main = () => (
   <Grid direction='column'>
     <Row>
-      <Header>
-        <VideoIcon height='40px' width='50px' />
-
-        <Input />
-
-        <Button>
-          <VideoIcon height='40px' width='50px' />
-        </Button>
-        {/* <Typograph variant='h1'>cabeça grande</Typograph> */}
-        <VideoIcon height='40px' width='50px' />
-        <VideoIcon height='40px' width='50px' />
-        <VideoIcon height='40px' width='50px' />
-        <VideoIcon height='40px' width='50px' />
-        <Avatar />
-      </Header>
+      <Header />
     </Row>
 
     <Row xs={{ height: '100%' }}>

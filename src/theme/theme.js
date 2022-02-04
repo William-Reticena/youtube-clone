@@ -1,4 +1,10 @@
 export const theme = {
+  baseMeasure: 8,
   color: 'white',
-  baseMeasure: 8
+  pallete: {
+    dark: {
+      primary: '#212121',
+      secondary: '#181818'
+    }
+  }
 };
