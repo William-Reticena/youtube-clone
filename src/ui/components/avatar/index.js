@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import img from '../../images/lobão.jpg';
+import img from '../../../images/lobão.jpg';
 
 export const Avatar = () => (
   <AvatarContent src={img} alt='' />

@@ -9,8 +9,8 @@ import {
   NavBar,
   Row,
   Typograph
-} from '../../ui-components';
-import { VideoIcon } from '../../icons';
+} from '../../ui/components';
+import { VideoIcon } from '../../ui/icons';
 
 const Main = () => (
   <Grid direction='column'>
