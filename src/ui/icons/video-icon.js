@@ -1,10 +1,12 @@
-export const VideoIcon = ({ height, width }) => (
-  <svg width={width} height={height} viewBox="10 0 250 280" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M192.5 102.781L262.5 63.25V189.75L192.5 150.219V102.781ZM17.5 63.25V189.75H192.5V63.25H17.5Z" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+export const VideoIcon = () => (
+  <svg height='24px' width='24px' viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" focusable="false">
+    <g>
+      <path d="M14,13h-3v3H9v-3H6v-2h3V8h2v3h3V13z M17,6H3v12h14v-6.39l4,1.83V8.56l-4,1.83V6 M18,5v3.83L22,7v8l-4-1.83V19H2V5H18L18,5 z" fill="white"></path>
+    </g>
   </svg>
 );
 
 VideoIcon.defaultProps = {
-  height: '60px',
-  width: '60px'
+  height: '24px',
+  width: '24px'
 };

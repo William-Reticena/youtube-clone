@@ -3,7 +3,7 @@ export const theme = {
   color: 'white',
   pallete: {
     dark: {
-      primary: '#212121',
+      primary: '#202020',
       secondary: '#181818'
     }
   }

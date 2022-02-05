@@ -4,8 +4,14 @@ export const IconButton = ({ children }) => (
   <IconButtonWrapper>{children}</IconButtonWrapper>
 );
 
-const IconButtonWrapper = styled.div`
+const IconButtonWrapper = styled.button`
+  background: transparent;
+  border: 0;
   border-radius: 50%;
-  // box-sizing: border-box;
-  padding: ${({ theme }) => theme.baseMeasure}px;
+  margin: 0;
+  padding: 8px;
 `;
+
+// const Button = styled.button`
+
+// `;

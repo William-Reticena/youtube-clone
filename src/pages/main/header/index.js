@@ -1,6 +1,14 @@
 import styled from "styled-components";
 import { Avatar, Button, IconButton, Input } from '../../../ui/components';
-import { MenuOutlined, VideoIcon, YoutubeLogo } from '../../../ui/icons';
+import {
+  AppsIcon,
+  MagnifyingGlass,
+  MenuOutlined,
+  Microphone,
+  NotificationIcon,
+  VideoIcon,
+  YoutubeLogo
+} from '../../../ui/icons';
 
 export const Header = () => (
   <HeaderWrapper>
@@ -16,18 +24,30 @@ export const Header = () => (
 
     <Container>
       <Input />
+
       <Button>
-        <VideoIcon height='40px' width='50px' />
+        <MagnifyingGlass />
       </Button>
-      {/* <Typograph variant='h1'>cabeça grande</Typograph> */}
-      <VideoIcon height='40px' width='50px' />
+
+      <IconButton>
+        <Microphone />
+      </IconButton>
     </Container>
 
     <Container>
-      <VideoIcon height='40px' width='50px' />
-      <VideoIcon height='40px' width='50px' />
-      <VideoIcon height='40px' width='50px' />
-      <Avatar />
+      <IconButton>
+        <VideoIcon height='40px' width='50px' />
+      </IconButton>
+
+      <IconButton>
+        <AppsIcon />
+      </IconButton>
+
+      <IconButton>
+        <NotificationIcon />
+      </IconButton>
+      
+      <Avatar size='32px' />
     </Container>
   </HeaderWrapper>
 );
@@ -47,6 +67,5 @@ const Container = styled.div`
 `;
 
 const LogoContainer = styled.div`
-  // height: 56px;
   padding: 14px 18px;
 `;

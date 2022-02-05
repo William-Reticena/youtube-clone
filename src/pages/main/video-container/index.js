@@ -6,7 +6,7 @@ export const VideoContainer = ({ src }) => (
     <VideoThumb src={src} />
 
     <Container>
-      <Avatar height='35px' />
+      <Avatar size='35px' />
 
       <VideoInfo>
         <Typograph variant='h2'>Título do vídeo</Typograph>

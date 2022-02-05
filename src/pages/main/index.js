@@ -71,17 +71,17 @@ const Main = () => (
             <Typograph variant='h2'>INSCRIÇÕES</Typograph>
 
             <Link to='#'>
-              <Avatar height='30px' />
+              <Avatar size='30px' />
               Lives do Alanzoka
             </Link>
 
             <Link to='#'>
-              <Avatar height='30px' />
+              <Avatar size='30px' />
               Voices Makers
             </Link>
 
             <Link to='#'>
-              <Avatar height='30px' />
+              <Avatar size='30px' />
               Brian Kibler
             </Link>
           </NavBar>
