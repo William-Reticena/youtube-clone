@@ -6,7 +6,3 @@ export const VideoIcon = () => (
   </svg>
 );
 
-VideoIcon.defaultProps = {
-  height: '24px',
-  width: '24px'
-};

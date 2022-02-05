@@ -6,5 +6,5 @@ export const Row = styled.div.attrs(props => {
   // display: flex;
   // flex-direction: column;
   height: ${({ xs }) => xs?.height || 'auto'};
-  width: ${props => props.xs?.width || props.width || 'auto'};
+  // width: ${props => props.xs?.width || props.width || 'auto'};
 `;

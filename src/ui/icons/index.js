@@ -1,7 +1,15 @@
 export { AppsIcon } from './apps-icon';
+export { CompassOutlined } from './compass-outlined';
+export { HomeIcon } from './home-icon';
+export { HistoryOutlined } from './history-outlined';
+export { LibraryOutlined } from './library-outlined';
+export { LikedVideos } from './liked-videos';
 export { MagnifyingGlass } from './magnifying-glass';
 export { MenuOutlined } from './menu-outlined';
 export { Microphone } from './microphone';
 export { NotificationIcon } from './notification-icon';
+export { SubscriptionsOutlined } from './subscriptions-outlined';
 export { VideoIcon } from './video-icon';
+export { WatchLaterOutlined } from './watch-later-outlined';
+export { YourVideosOutlined } from './your-videos-outlined';
 export { YoutubeLogo } from './youtube-logo';

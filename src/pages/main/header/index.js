@@ -36,7 +36,7 @@ export const Header = () => (
 
     <Container>
       <IconButton>
-        <VideoIcon height='40px' width='50px' />
+        <VideoIcon />
       </IconButton>
 
       <IconButton>
@@ -54,7 +54,7 @@ export const Header = () => (
 
 const HeaderWrapper = styled.header`
   align-items: center;
-  background: ${({ theme }) => theme.pallete.dark.primary};
+  background: #202020;
   display: flex;
   height: ${({ theme }) => theme.baseMeasure * 7}px;
   justify-content: space-between;
