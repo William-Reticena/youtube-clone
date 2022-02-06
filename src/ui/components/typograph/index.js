@@ -25,8 +25,8 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
-  display: inline-block;
-  color: #00f;
+  ${[...defaultStyles]}
+  overflow-wrap: break-word;
 `;
 
 const H3 = styled.h3`
@@ -45,8 +45,8 @@ const H5 = styled.h5`
 `;
 
 const H6 = styled.h6`
-  display: inline-block;
-  color: #0f0;
+  ${[...defaultStyles]}
+  font-size: 12px;
 `;
 
 const variants = {

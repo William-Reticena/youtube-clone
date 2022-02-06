@@ -5,14 +5,16 @@ export const VideoContainer = ({ src }) => (
   <VideoContainerWrapper>
     <VideoThumb src={src} />
 
-    <Container>
-      <Avatar size='35px' />
+      <Container>
+        <Avatar size='35px' margin='12px 12px 0 0' />
 
-      <VideoInfo>
-        <Typograph variant='h2'>Título do vídeo</Typograph>
-        <Typograph variant='h6'>Nome do canal</Typograph>
-      </VideoInfo>
-    </Container>
+    <VideoItems>
+        <VideoInfo>
+          <Typograph variant='h2'>Título do vídeo</Typograph>
+          <Typograph variant='h6'>Nome do canal</Typograph>
+        </VideoInfo>
+    </VideoItems>
+      </Container>
   </VideoContainerWrapper>
 );
 
@@ -20,7 +22,14 @@ const VideoContainerWrapper = styled.div`
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: fit-content;
+  flex-grow: 1;
+  // height: fit-content;
+  // justify-content: center;
+  margin-bottom: 64px;
+`;
+
+const VideoItems = styled.div`
+  display: inline-block;
 `;
 
 const VideoThumb = styled.img.attrs(props => ({
@@ -28,12 +37,19 @@ const VideoThumb = styled.img.attrs(props => ({
   src: props.src
 }))`
   height: 150px;
-  width: 270px;
+  width: 250px;
 `;
 
 const Container = styled.div`
   align-items: center;
   display: flex;
+  // justify-content: space-evenly;
+  // flex-grow: 1;
 `;
 
-const VideoInfo = styled.div``;
+const VideoInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  flew-wrap: wrap;
+  // justify-content: space-between;
+`;

@@ -107,7 +107,7 @@ export const Drawer = () => (
           <Avatar size='30px' />
         </IconContainer>
 
-        <Typograph variant='h4'>Lives do Alanzoka</Typograph>
+        <Typograph variant='h4'>Lobão Caolho</Typograph>
       </Paper>
     ))}
   </DrawerWrapper>

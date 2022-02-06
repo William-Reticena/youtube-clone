@@ -2,7 +2,6 @@ import React from "react";
 import { Header } from './header';
 import { MainContent } from "./main-content";
 import { Drawer } from "./drawer";
-import { VideoContainer } from "./video-container";
 import { Grid, Row } from '../../ui/components';
 
 import lobo from '../../images/lobo-colorido.jpg'
@@ -20,11 +19,7 @@ const Main = () => (
         </Row>
 
         <Row fullwidth>
-          <MainContent>
-            {[1,2,3,4,5,6,].map(item => (
-              <VideoContainer src={lobo} />
-            ))}
-          </MainContent>
+          <MainContent src={lobo} />
         </Row>
       </Grid>
     </Row>
