@@ -1,7 +1,7 @@
 import React from "react";
 import { Header } from './header';
 import { MainContent } from "./main-content";
-import { NavBar } from "./nav-bar";
+import { Drawer } from "./drawer";
 import { VideoContainer } from "./video-container";
 import { Grid, Row } from '../../ui/components';
 
@@ -16,9 +16,7 @@ const Main = () => (
     <Row xs={{ height: '100%' }}>
       <Grid>
         <Row>
-          <NavBar>
-           
-          </NavBar>
+          <Drawer />
         </Row>
 
         <Row fullwidth>

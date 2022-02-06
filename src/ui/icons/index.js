@@ -1,6 +1,6 @@
 export { AppsIcon } from './apps-icon';
 export { CompassOutlined } from './compass-outlined';
-export { HomeIcon } from './home-icon';
+export { HomeIconFilled, HomeIconOutlined } from './home-icon';
 export { HistoryOutlined } from './history-outlined';
 export { LibraryOutlined } from './library-outlined';
 export { LikedVideos } from './liked-videos';

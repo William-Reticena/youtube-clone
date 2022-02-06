@@ -46,7 +46,7 @@ export const Header = () => (
       <IconButton>
         <NotificationIcon />
       </IconButton>
-      
+
       <Avatar size='32px' />
     </Container>
   </HeaderWrapper>

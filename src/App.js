@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route  } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, theme } from './theme'
-import Main from './pages/main';
+import { GlobalStyle, theme } from './theme';
+import AppRoutes from './routes';
 
 const App = () => {
 
@@ -13,7 +13,7 @@ const App = () => {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='*' element={<AppRoutes />} />
         </Routes>
       </BrowserRouter>
     </ThemeProvider>

@@ -10,6 +10,15 @@ export const Typograph = ({ children, variant }) => {
   );
 };
 
+const defaultStyles = [
+  'display: inline-block;',
+  'font: bold 14px Arial;',
+  'overflow: hidden;',
+  'text-overflow: ellipsis;',
+  'white-space: nowrap;',
+  'width: 100%;'
+];
+
 const H1 = styled.h1`
   display: inline-block;
   color: #000;
@@ -20,20 +29,32 @@ const H2 = styled.h2`
   color: #00f;
 `;
 
+const H3 = styled.h3`
+  ${[...defaultStyles]}
+  box-sizing: border-box;
+  padding: 8px 24px;
+`;
+
 const H4 = styled.h4`
+  ${[...defaultStyles]}
+`;
+
+const H5 = styled.h5`
   display: inline-block;
   width: 100%;
 `;
 
 const H6 = styled.h6`
-// display: block;
-color: #0f0;
+  display: inline-block;
+  color: #0f0;
 `;
 
 const variants = {
   'h1': H1,
   'h2': H2,
+  'h3': H3,
   'h4': H4,
+  'h5': H5,
   'h6': H6,
 };
 
