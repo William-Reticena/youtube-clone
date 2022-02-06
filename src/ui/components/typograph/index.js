@@ -11,6 +11,7 @@ export const Typograph = ({ children, variant }) => {
 };
 
 const defaultStyles = [
+  // 'box-sizing: border-box;',
   'display: inline-block;',
   'font: bold 14px Arial;',
   'overflow: hidden;',
@@ -27,6 +28,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${[...defaultStyles]}
   overflow-wrap: break-word;
+  // padding: 0 0 24px 0;
 `;
 
 const H3 = styled.h3`
