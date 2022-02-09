@@ -45,7 +45,6 @@ export const Drawer = () => (
       </Link>
 
       <GuideItems>
-
         <Link to='#'>
           <Paper>
             <IconContainer>
@@ -132,6 +131,7 @@ const DrawerItems = styled.div`
 const GuideItems = styled.div`
   border-bottom: 1px solid #313131;
   border-top: 1px solid #313131;
+  padding-top: 10px;
 `;
 
 const Paper = styled.div`
@@ -140,6 +140,10 @@ const Paper = styled.div`
   height: ${({ theme }) => theme.baseMeasure * 5}px;
   justify-content: center;
   padding: 0 24px;
+
+  &:hover {
+    background: #303030;
+  }
 `;
 
 const IconContainer = styled.div`

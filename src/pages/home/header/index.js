@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import keyboard from '../../../images/keyboard.png';
 import { Avatar, Button, IconButton, Input } from '../../../ui/components';
 import {
   AppsIcon,
@@ -23,7 +24,12 @@ export const Header = () => (
     </Container>
 
     <Container>
-      <Input />
+      <InputContainer >
+        <Input />
+
+        <Keyboard />
+
+      </InputContainer>
 
       <Button>
         <MagnifyingGlass />
@@ -68,4 +74,19 @@ const Container = styled.div`
 
 const LogoContainer = styled.div`
   padding: 14px 18px;
+`;
+
+const InputContainer = styled.div`
+  align-items: center;
+  background: #121212;
+  display: flex;
+  height: 34px;
+  padding: 2px 6px;
+`;
+
+const Keyboard = styled.img.attrs({
+  alt: '',
+  src: keyboard
+})`
+  cursor: pointer;
 `;
